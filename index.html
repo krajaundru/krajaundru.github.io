@@ -1,7 +1,62 @@
-<!DOCTYPE html>
-<html>
-<body>
-   <h1>Welcome to Flash cards</h1>
-   <p> This is a light weight flash cards app backed by firebase.</p>
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <style type="text/css">    
+  </style>
+</head>
+<body ng-app="BlankApp" ng-cloak>
+  <md-toolbar layout="row" class="md-toolbar-tools">
+     <h1>Flash cards</h1>
+  </md-toolbar>
+  
+  <div flex layout="row">
+    <md-content flex id="content">
+      <div flex-xs="" layout="column">
+        <md-card>        
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">Action buttons</span>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-content ng-hide="true">
+            <p>
+              The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+              two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+            </p>
+            <p>
+              The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+              two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+            </p>
+            <p>
+              The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+              two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+            </p>
+          </md-card-content>
+          <md-card-actions layout="row" layout-align="end center">
+            <md-button class="md-raised">Button</md-button>
+            <md-button class="md-raised md-primary">Primary</md-button>            
+          </md-card-actions>
+        </md-card>
+      </div>
+    </md-content>  
+  </div>
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">   
+    angular.module('BlankApp', ['ngMaterial']);
+  </script>
+  
 </body>
 </html>
